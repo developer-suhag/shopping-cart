@@ -33,6 +33,16 @@ function updateTotal() {
     document.getElementById('total-price').innerText = totalPrice;
 }
 
+// decrease quantity
+// function inputDecrease(inputId) {
+//     const inputField = document.getElementById(inputId);
+//     const inputQuantity = inputField.value;
+//     if (inputQuantity > 0) {
+//         return inputField.value = parseInt(inputQuantity) - 1;
+//     }
+
+// }
+
 // Handle Mobile increase and decrease events 
 // increase 
 document.getElementById('mobile-plus').addEventListener('click', function () {
@@ -46,6 +56,9 @@ document.getElementById('mobile-minus').addEventListener('click', function () {
 // handle case increase and decrease events
 // increase
 document.getElementById('case-plus').addEventListener('click', function () {
+    // const caseInput = document.getElementById('case-number');
+    // const caseQuantity = caseInput.value;
+    // caseInput.value = parseInt(caseQuantity) + 1;
     updateQuantity('case', 59, true)
 });
 // decrease 
